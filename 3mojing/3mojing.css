@@ -1,0 +1,34 @@
+body{
+	background-color: #68cdd5;
+}
+
+.return{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.logo1{
+	margin: 115px auto;
+	text-align: center;
+}
+p{
+	color: #fff;
+}
+.word{
+	padding: 18%;
+}
+.logo2{
+	float: left;
+	margin-left: 10%;
+}
+.logo2 img{
+	width: 80px;
+	height: 80px;
+}
+.logo3{
+	float: right;
+	margin-right: 10%;
+}
+.logo3 img{
+	width: 80px;
+	height: 80px;
+}
