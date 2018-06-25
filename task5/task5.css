@@ -3,6 +3,7 @@
 	padding: 0;
 }
 html{
+	/*font-size: 125%;*/
 	font-size: 62.5%;
 }
 body{
@@ -10,9 +11,9 @@ body{
 }
 button{
 	border: 0.1rem solid #5ac0ce;
-	border-radius: 0.5rem;
-	height: 4.4rem;
-	font-size: 1.7rem;
+	border-radius: 1rem;
+	height: 8.8rem;
+	font-size: 3.4rem;
 	outline: none;
 }
 a:link,
@@ -30,24 +31,30 @@ a:focus {
 	width: 100%;
 	background-color: #5ac0ce;
 	color: #fff;
-	height: 4.2rem;
-	line-height: 4.2rem;
+	height: 8.4rem;
+	line-height: 8.4rem;
 	z-index: 999;
 }
  .left{
 	float: left;
-	margin-left: 1.5rem;
+	margin:2.3rem 0 0 3rem;
+	width: 3rem;
+	height: 4rem;
 }
 .title{
 	margin: 0 3rem;
-	font-size: 1.8rem;
+	font-size: 3.4rem;
+	font-family: 'SimHei', 'STHeiti', sans-serif;
+    font-weight: 500; 
 	text-align: center;
 }
 
 main{
 	position: absolute;
 	width: 100%;
-	top: 4.2rem
+	top: 8.4rem;
+	bottom: 12rem;
+	overflow-y: auto;
 }
 .content{
 	height: auto;
@@ -56,95 +63,98 @@ main{
 	position: relative;
 }
 .bg{
-	height: 16.4rem;
+	height: 32.8rem;
 	background: url(images/bg.png) no-repeat center;
 	background-size: 100% 100%;
 }
 .person{
 	position: absolute;
-	top: 0;
+	top: 7.8rem;
+	left: 2rem;
 	display: flex;
 	align-items: center;
-	height: 
+	height: 17.2rem;
 }
 .head{
-	width: 8.5rem;
-	height: 8.5rem;
+	width: 17rem;
+	height: 17rem;
 	margin: 4rem 1.5rem;
 }
 .detail{
-	/*flex: 1;*/
+	flex: 1;
 	color: #fff;
-	/*margin-left: 0rem;*/
+	margin-left: 1.5rem;
 }
 .name{
-	font-size: 1.8rem;
+	font-size: 3.6rem;
 	margin-bottom: 0.6rem;
 	display: inline-block;
 }
 .age{
-	font-size: 1.4rem;
-	margin-bottom: 0.6rem;
+	font-size: 2.8rem;
+	margin-bottom: 2.4rem;
 	margin-left: 1rem;
 	display: inline-block;
 }
 .location{
-	font-size: 1.2rem;
+	font-size: 2.4rem;
 }
 .location img{
-	width: 0.9rem;
-	height: 1.2rem;
+	width: 1.8rem;
+	height: 2.3rem;
 	vertical-align: middle;
 }
 .skill{
-	font-size: 1.6rem;
+	font-size: 3.2rem;
 }
 .stitle{
-	height: 5rem;
-	line-height: 5rem;
+	height: 10rem;
+	line-height: 10rem;
 	border-bottom: 0.1rem solid #e1e5e7;
+	margin: 0;
 }
 .stitle span{
-	margin-left: 1.5rem;
+	margin-left: 3rem;
 	border-left: 0.2rem solid #5fc0cd;
-	padding-left: 1.5rem;
-	font-size: 1.6rem;
+	padding-left: 3rem;
+	font-size: 3.2rem;
 }
 .scontent{
-	margin: 0 3rem;
+	margin: 0 6rem;
 }
 .scondition{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	height: 5rem;
-	line-height: 5rem;
+	height: 10rem;
+	line-height: 10rem;
 	border-bottom: 0.1rem solid #e1e5e7;
 
 }
 .scondition img{
-	height: 1.25rem;
-	width: 1.25rem;
-	margin: 0 0.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin: 0 1rem;
 }
 .line{
-	border-right: 0.1rem solid #e1e5e7;
-	height: 1.4rem;
-	margin-left: 0.5rem;
+	border-right: 0.2rem solid #e1e5e7;
+	height: 2.8rem;
+	margin-left: 1rem;
 }
 .srow{
 	display: flex;
-	padding: 1.8rem 0;
+	padding: 3.6rem 0;
 	border-bottom: 0.1rem solid #e1e5e7;
 }
 .srow label{
-	padding: 0 0.5rem;
+	padding: 0 2.4rem;
 	border-right: 0.1rem solid #e1e5e7;
 	color: #999;
+	
 }
 .srow span{
 	flex: 1;
-	padding-left: 0.5rem;
+	padding-left: 2.4rem;
 	display: inline-flex;
 }
 .price{
@@ -156,19 +166,19 @@ footer{
 	position: fixed;
 	display: flex;
 	width: 100%;
-	bottom: 0.5rem;
+	bottom: 2.6rem;
 	padding: 1.4rem 0;
 	background-color: #fff;
 }
 .lmsg{
 	flex: 1;
-	margin: 0 0.5rem 0 1rem;
+	margin: 0 1.4rem 0 3.7rem;
 	color: #5fc0cd;
 	background-color: #fff;
 }
 .contect{
 	flex: 1;
-	margin: 0 0.5rem 0 1rem;
+	margin: 0 3.7rem 0 1.4rem;
 	color: #fff;
 	background-color: #5fc0cd;
 }
