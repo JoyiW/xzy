@@ -148,14 +148,16 @@ main{
 }
 .srow label{
 	padding: 0 2.4rem;
-	border-right: 0.1rem solid #e1e5e7;
+	/*border-right: 0.1rem solid #e1e5e7;*/
 	color: #999;
-	
+	text-align: center;
+
 }
 .srow span{
 	flex: 1;
 	padding-left: 2.4rem;
 	display: inline-flex;
+	border-left: 0.1rem solid #e1e5e7;
 }
 .price{
 	color: #e46060;
