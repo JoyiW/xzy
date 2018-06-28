@@ -113,7 +113,7 @@ main{
 	border-bottom: 0.1rem solid #e1e5e7;
 	margin: 0;
 }
-.stitle span{
+.stitle>span{
 	margin-left: 3rem;
 	border-left: 0.2rem solid #5fc0cd;
 	padding-left: 3rem;
@@ -148,16 +148,16 @@ main{
 }
 .srow label{
 	padding: 0 2.4rem;
-	/*border-right: 0.1rem solid #e1e5e7;*/
+	border-right: 0.1rem solid #e1e5e7;
 	color: #999;
 	text-align: center;
-
+	height: 4.2rem;
 }
 .srow span{
 	flex: 1;
 	padding-left: 2.4rem;
 	display: inline-flex;
-	border-left: 0.1rem solid #e1e5e7;
+	/*border-left: 0.1rem solid #e1e5e7;*/
 }
 .price{
 	color: #e46060;

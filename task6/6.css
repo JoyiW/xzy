@@ -1,0 +1,166 @@
+
+button:focus {
+    outline: none;
+}
+/*header*/
+.navbar-fixed-top{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 0px;
+	background-color: #5fc0cd;
+}
+.find-employer , .find-nurse{
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+.find-employer {
+	color: #fff;
+	background-color: #55a8b3;
+	padding: 8px 12px;
+}
+.find-nurse {
+	color: #5fc0cd;
+	background-color: #fff;
+	/*z-index: 1;*/
+	padding: 8px 12px;
+	margin-left: -10px;
+}
+.btn-position {
+	background: url(images/css_sprites.png) -2px -2px;
+	width: 22px;
+	height: 23px;
+	position: absolute;
+	top: 20%;
+	right: 15px;
+	
+}
+/*下拉菜单*/
+.nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0px;
+	border-bottom: 1px solid #e1e5e7;
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	margin-top: 50px;
+	z-index: 2;
+}
+
+.nav-btn {
+	border: none;
+	background: #fff;
+	color: #afbac0;
+
+}
+.dropdown-menu {
+	min-width: 100%;
+	top: 30px;
+	text-align: center;
+}
+.nav .btn-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-meal , .nav-patient {
+	border-left: 1px solid 	#e1e5e7;
+}
+.caret {
+	margin-left: 16px;
+	color: #afbac0;
+}
+/*main*/
+.main{
+	width: 100%;
+	height: 72%;
+	overflow: auto;
+	position: fixed;
+	top: 93px;
+	bottom: 63px;
+}
+.line{
+	border-bottom: 1px solid #e1e5e7;
+}
+.calender{
+	width: 23px;
+	height: 23px;
+	background: url(images/css_sprites.png) -152px 3.5px;
+	margin-left: 4px;
+}
+.main-img-position{
+	width: 25px;
+	height: 25px;
+	background: url(images/css_sprites.png) -152px 38px;
+	margin-left: 4px;
+}
+.main-img-price{
+	height: 14px;
+	margin: 0px;
+	position: absolute;
+	right: 10px;
+
+}
+.main-price{
+	color: red;
+	position: absolute;
+	right: 38px;
+}
+.main-service , .main-position{
+	color: #afbac0;
+	margin-left: 6px;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.display{
+	display: inline-block;
+	margin-bottom: 0;
+}
+.line-first , .line-middle , .line-last {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 10px 0;
+}
+.str{
+	position: absolute;
+	left: 34px;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+}
+/*footer*/
+.navbar-fixed-bottom {
+	display: flex;
+	justify-content: center;
+	background-color: #f8fafb;
+}
+.navbar-fixed-bottom .btn-group {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.home-page , .mine{
+	border: none;
+	background: #fff;
+}
+.home-page {
+	color: #5fc0cd;
+}
+.mine {
+	color: #999999;
+}
+.btn-imgs {
+	transform: scale(.5,.5);
+}
+.img-circle{
+	border: none;
+	background-color: #5fc0cd;
+	height: 52px;
+	margin-top: 5px;
+}
