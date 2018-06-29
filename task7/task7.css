@@ -1,0 +1,122 @@
+
+body{
+	background-color: #f0f0f0;
+}
+/*header*/
+.header{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	background-color: #29bde0;
+}
+.menu{
+	/*display: inline-block;*/
+	width: 18px;
+	height: 12px;
+	padding: 3px 0;
+	margin: 8px 0 8px 11px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	background-color: #fff;
+	background-clip: content-box;
+}
+/*main*/
+.main{
+	width: 100%;
+	height: auto;
+	top: 28px;
+	overflow: auto;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+}
+/*上次游戏*/
+.last{
+	position: absolute;
+	top: 13px;
+	width: 89%;
+	height: 58px;
+	background-color: #fff;
+	border: 0.5px solid #d0d0d0;
+}
+.last-game{
+	color: #9a9a9a;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 18px;
+	margin: 0;
+}
+.right{
+	position: absolute;
+	width: 12px;
+	height: 22px;
+	top: 18px;
+	right:17px;
+}
+/*捉鬼游戏*/
+.game{
+	position: relative;
+	top: 85px;
+	width: 89%;
+	border: 0.5px solid #d0d0d0;
+	background-color: #fff;
+}
+.ghost{
+	width: auto;
+	height: 49px;
+	color: #fbb435;
+	border-bottom: 1px solid #fbb435;
+	text-align: center;
+	font-size: 19px;
+	justify-content: center;
+	padding-top: 15px;
+}
+/*version*/
+.version{
+	text-align: center;
+	bottom: 28px;
+}
+.list-group{
+	margin: 0;
+}
+.list-group-item{
+	border: 1px solid transparent;
+	border-radius: 0 !important;
+	padding: 0;
+}
+.version-name{
+	width: 231px;
+	height: 68px;
+	margin: 15px auto;
+	line-height: 68px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #29bde0;
+	border-radius: 0;
+}
+.people-num{
+	font-size: 12px;
+	color: #787878;
+}
+.triangle{
+    border-width:12px 0 12px 12px;
+    border-style:solid;
+    border-color:transparent transparent transparent #fbb435;/*透明 透明 透明 黄*/
+    position:fixed;
+    top:50%;
+    left: 90%;
+}
+/*dot*/
+.dot-blue,
+.dot-grey {
+	width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    margin: 0px 2px;
+}
+.dot-blue {
+    background-color: #69d1e9;
+}
+.dot-grey {
+	background-color: #f0f0f0; 
+}
