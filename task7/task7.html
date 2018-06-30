@@ -4,9 +4,7 @@
 	<title>首页</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="task7.css">
 </head>
 <body>
@@ -18,9 +16,9 @@
 	<main class="main">
 		<!-- 上次游戏 -->
 		<div class="last">
-			<p class="last-game">
+			<a class="last-game" href="">
 				上次游戏： 做鬼猜词版
-			</p>
+			</a>
 			<img src="images/right.png" class="right">
 		</div>
 		<!-- 捉鬼游戏 -->
@@ -33,24 +31,32 @@
 				<ul class="list-group">
 					<li class="list-group-item version-name">简化版</li>
 					<li class="list-group-item people-num">有1133个用户正在玩此款游戏</li>
-				<!-- </ul>
-				<ul class="list-group"> -->
 					<li class="list-group-item version-name">猜词版</li>
 					<li class="list-group-item people-num">有1133个用户正在玩此款游戏</li>
-				<!-- </ul>
-				<ul class="list-group"> -->
 					<li class="list-group-item version-name">白痴版</li>
 					<li class="list-group-item people-num">有1133个用户正在玩此款游戏</li>
-
 				</ul>
 				<div class="triangle"></div>
-				<div class="dot">
-
+				<!-- dot -->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+					<div class="dot">
+					   	<div class="dot-blue"></div>
+					    <div class="dot-grey"></div>
+					    <div class="dot-grey"></div>
+					    <div class="dot-grey"></div>
+				    </div>
+					</div>
+					
+				</div>
 					
 				</div>
 				
 			</div>	
 		</div>
 	</main>
+<script src="jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

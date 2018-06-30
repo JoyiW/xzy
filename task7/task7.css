@@ -10,7 +10,7 @@ body{
 	background-color: #29bde0;
 }
 .menu{
-	/*display: inline-block;*/
+	
 	width: 18px;
 	height: 12px;
 	padding: 3px 0;
@@ -54,7 +54,7 @@ body{
 	right:17px;
 }
 /*捉鬼游戏*/
-.game{
+.main .game{
 	position: relative;
 	top: 85px;
 	width: 89%;
@@ -80,11 +80,13 @@ body{
 	margin: 0;
 }
 .list-group-item{
-	border: 1px solid transparent;
-	border-radius: 0 !important;
+	border-top: 0 solid transparent;
+	border-bottom: 0 solid transparent;
+	border-right: 0.5 solid #d0d0d0;
+	border-left: 0.5 solid #d0d0d0;
 	padding: 0;
 }
-.version-name{
+.list-group .version-name{
 	width: 231px;
 	height: 68px;
 	margin: 15px auto;
@@ -95,18 +97,27 @@ body{
 	border-radius: 0;
 }
 .people-num{
+	
 	font-size: 12px;
 	color: #787878;
+	
 }
 .triangle{
-    border-width:12px 0 12px 12px;
-    border-style:solid;
-    border-color:transparent transparent transparent #fbb435;/*透明 透明 透明 黄*/
-    position:fixed;
-    top:50%;
-    left: 90%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 15px solid #fbb435;
+    border-bottom: 12px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 6px;
 }
 /*dot*/
+.dot{
+	display: flex;
+	justify-content: center;
+	margin: 10px 100px;
+}
 .dot-blue,
 .dot-grey {
 	width: 8px;

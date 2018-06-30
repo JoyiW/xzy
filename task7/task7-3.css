@@ -1,0 +1,120 @@
+/*header*/
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #29bde0;
+	z-index: 1;
+}
+.header-col{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	font-size: 17px;
+}
+.img{
+	transform: scale(.5,.5);
+}
+
+/*main*/
+.main{
+	overflow: auto;
+	position: relative;
+	top: 40px;
+	background-color: #29bde0;
+}
+.list-group{
+	width: 100%;
+	position: relative;
+	padding: 0 35px;
+	text-align: center;
+}
+.list-group-item{
+	display: flex;
+	border: 0 solid transparent;
+	padding: 0;
+	margin: 0;
+	background-color: #29bde0;
+	width: 100%;
+	color: #fff;
+	font-size: 13px;
+}
+.champion{
+	background: url(images/champion.png) no-repeat center;
+	position: relative;
+	top: 17px;
+	width: 100%;
+	height: 103px;
+	background-size: 175px 103px;
+}
+.great{
+	margin-top:30px;
+	color: #ffc865;
+	font-size: 17px;
+}
+.total-time{
+	margin-top: 30px;
+}
+.manning , .word{
+	margin-top: 7px;
+}
+
+/*report*/
+.container-fluid{
+	background-color: #ffffff;
+	border: 1px solid #a6a6a6;
+	position: relative;
+	padding: 0 15px;
+	margin: 0;
+}
+.report{
+	border-bottom: 0.5px solid #a6a6a6;
+}
+.report-date{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 8px;
+
+}
+.days{
+	color: #515151;
+	font-size: 15px;
+}
+.times{
+	color: #c7c7c7;
+	font-size: 10px;
+}
+.report-contents{
+	color: #a6a6a6;
+	font-size: 13px;
+	padding-top: 15px;
+	padding-bottom: 18px;
+}
+/*footer*/
+.footer{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+	/*background-color: #29bde0 ;*/
+	background-color: rgba(41, 189, 224,.6);
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+}
+.btn{
+	font-size: 20px;
+	color: #fff;
+	margin: 12px 0;
+}
+.again{
+	margin-right: 13px;
+	background-color: #f66f6f;
+}
+.upload-share{
+	margin-left: 13px;
+	background-color: #fbb435;
+}

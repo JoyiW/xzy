@@ -1,0 +1,144 @@
+
+.container-fluid{
+	background-color: #29bde0;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	padding: 0 -15px;
+	margin: 0;
+}
+/*header*/
+.header{
+	display: flex;
+	font-size: 17px;
+	text-align: center;
+	justify-content: space-between;
+	padding: 10px;
+	color: #fff;
+}
+.menu , .img-close{
+	height: 20px;
+	vertical-align: baseline;
+}
+
+/*middle*/
+.middle{
+	position: relative;
+	background-color: #b9e9f5;
+	padding: 15px 20px;
+	font-size: 13px;
+}
+.play{
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	margin-left: -15px;
+	margin-top: -15px;
+}
+.triangle-down{
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top:10px solid #b9e9f5;
+	margin-left: 10px;
+}
+.col-8{
+	color: #fff;
+	font-size: 12px;
+	padding: 6px 26px;
+}
+
+/*note*/
+.row-main {
+	position: absolute;
+	overflow: auto;
+	top: 128px;
+	bottom: 75px;
+	width: 100%;
+}
+.main-center {
+	text-align: center;
+}
+.square {
+	text-align: center;
+	display: inline-block;
+	margin: 6px 0px;
+}
+.identification {
+	background-color: #f5c97b;
+	width: 70px;
+	height: 50px;
+	display: table-cell;
+	vertical-align: middle;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+.num {
+	background-color: #83b09a; 
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+	font-size: 10px;
+}
+.choose {
+	/*display: none;*/
+	visibility: hidden;
+	margin-top: 15px;
+}
+.square:hover .choose {
+	visibility: visible;
+}
+.choose-div {
+	display: inline-block;
+	background-color: #fff;
+	width: 14.5px;
+	height: 14.5px;
+	position: relative;
+}
+.choose-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: scale(.5,.5);
+}
+.choose-kill {
+	margin-top: -8.2px;
+	margin-left: -13.5px;
+}
+.choose-check {
+	margin-left: -10px;
+    margin-top: -11px;
+}
+.choose-location {
+	margin-top: -12.5px;
+    margin-left: -13px;
+}
+.choose-add {
+	margin-left: -7px;
+    margin-top: -7px;
+}
+
+/*footer*/
+.row-footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+}
+.footer {
+	color: #fff;
+	background-color: #fbb435;
+	text-align: center;
+	margin: 0 30px 12px;
+	padding: 15px 0px;
+	font-size: 20px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
