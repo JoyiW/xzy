@@ -1,0 +1,238 @@
+body{
+	background-color: #fafafa;
+}
+a:hover{text-decoration: none;}
+/*header*/
+.cheader{
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	background-color: #fff;
+	top: 0;
+	z-index: 99;
+}
+.header{
+	background-color: #fff;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 19%;
+	
+}
+.row{
+	justify-content: center;
+}
+	
+.hotline{
+	margin: 0;
+	padding: 7px 0;
+	color: #1db176;
+	font-size: 7px;
+}
+.share-group{
+	margin-top: 4px;
+	font-size: 0;
+	right: 0;
+}
+.wechat>img,.qq>img,.weibo>img{
+	width: 14px;
+	background-size: 14px 12px;
+}
+.qq>img, .weibo>img{
+	margin-left: 9px;
+}
+
+/*nav*/
+.navbar{
+	position: fixed;
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #1db176;
+	z-index: 99;
+	top: 29px;
+}
+.navbar-nav{
+	margin-right: 17%;
+}
+
+.nav-item>a{
+	border-bottom: 2px solid #1db176;
+	padding: 16px;
+	margin: 0 7px;
+	color: #fff;
+	font-size: 8px;
+}
+.nav-item>a:hover{
+	border-bottom: 2px solid #fff;
+}
+.navbar-header{
+	margin-left: 17%;
+}
+.img-logo img{
+	width: 54px;
+	height: 26px;
+	
+}
+
+/*banner*/
+.banner{
+	position: relative;
+	top: 77px;
+}
+.banner .img-resposive{
+	width: 100%;
+}
+
+/*main*/
+.main{
+	position: relative;
+	width: 63%;
+	height: auto;
+	top: 77px;
+	left: 19%;
+}
+.main-locate{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 8px;
+}
+.main-locate span{
+	color: #1db176;
+}
+	/*合作企业*/
+.cooperative{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+/*左部分*/
+.cooperative-enterprise{
+	background-color: #fff;
+	/*position: absolute;*/
+	top: 50px;
+	width: 150px;
+	border: 1px solid  #e6e6e6;
+	border-radius: 5px;
+	margin-right: 15px;
+
+}
+.cooperative-enterprise ul{
+	padding: 0;
+}
+.enterprise-list{
+	padding-left: 50px;
+}
+
+.co-en{
+	font-size: 8px;
+	padding-top:10px;
+	padding-bottom: 15px;
+	border-bottom: 0.5px solid #e6e6e6;
+	list-style-type:none;
+	text-align: center;
+}
+.enterprise-list{
+	color: #1db176;
+	font-size: 7px;
+	margin-top: 20px;
+	list-style:square inside url(images/point1.png);
+}
+
+.cooperative-enterprise a li:hover,
+.cooperative-enterprise a li:visited{
+	color: #ff6500;
+	list-style: square inside url(images/point2.png);
+}
+	/*右部分*/
+.enterprise-content{
+	flex: 1;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	/*padding: 10px 35px;*/
+	font-size: 7px;
+	color: #999999;
+	
+}
+
+.ec-head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px 35px 15px 35px;
+}
+.ech-img{
+	margin-right: 10px;
+	
+}
+.ech-img img{
+	width: 61px;
+}
+.ec-middle{
+	text-indent:20px;
+}
+.ec-middle{
+	margin: 15px 35px 90px 35px;
+
+}
+
+/*footer*/
+.footer{
+	background-color: #1ba36e;
+	color: #fff;
+	font-size: 8px;
+	top: 115px;
+	position: relative;
+	width: 100%;
+
+}
+.footer a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer p{
+	margin-bottom: 0;
+}
+.footer1{
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	margin-left: 19%;
+	margin-bottom: 18px;
+}
+.us{
+	padding-top: 45px;
+}
+.us-line{
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 0 4px;
+	margin: 0 3px;
+}
+.al{
+	margin-top: 15px;
+}
+.al-l{
+	margin-left: 20px;
+}
+.about-wechat p{
+	font-size: 8px;
+}
+
+.aw-img{
+	background: url(images/erweima.png);
+	width: 46px;
+	height: 46px;
+	background-size: 46px 46px;
+}
+.column{flex:1;}
+.column+.column{margin-left:20px;}
+.footer2{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	border-top: 1px solid #26c184;
+}
