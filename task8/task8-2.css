@@ -65,7 +65,8 @@ a:hover{text-decoration: none;}
 	color: #fff;
 	font-size: 8px;
 }
-.nav-item>a:hover{
+.nav-item>a:hover,
+.nav-item>a:visited{
 	border-bottom: 2px solid #fff;
 }
 .navbar-header{

@@ -65,7 +65,8 @@ a:hover,a:visited,a{
 	color: #fff;
 	font-size: 8px;
 }
-.nav-item>a:hover{
+.nav-item>a:hover,
+.nav-item>a:visited{
 	border-bottom: 2px solid #fff;
 }
 /*carousel*/
