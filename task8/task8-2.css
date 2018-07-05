@@ -100,7 +100,7 @@ a:hover{text-decoration: none;}
 	margin-bottom: 15px;
 	font-size: 8px;
 }
-.main-locate span{
+.main-locate a,.main-locate a:hover{
 	color: #1db176;
 }
 	/*合作企业*/
