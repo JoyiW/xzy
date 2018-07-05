@@ -65,10 +65,10 @@ a:hover,a:visited,a{
 	color: #fff;
 	font-size: 8px;
 }
-.nav-item>a:hover,
-.nav-item>a:visited{
+.nav-item>a:hover,.active-line>a{
 	border-bottom: 2px solid #fff;
 }
+
 /*carousel*/
 .carousel{
 	display: flex;
@@ -239,7 +239,8 @@ a:hover,a:visited,a{
 	padding: 60px 17%;
 	font-size: 0;
 	width: 100%;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .stu-title{
 	text-align: center;

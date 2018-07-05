@@ -1,7 +1,7 @@
 body{
 	background-color: #fafafa;
 }
-a:hover{text-decoration: none;}
+a:hover{text-decoration: none;color: #fff;}
 /*header*/
 .cheader{
 	position: fixed;
@@ -65,10 +65,11 @@ a:hover{text-decoration: none;}
 	color: #fff;
 	font-size: 8px;
 }
-.nav-item>a:hover,
-.nav-item>a:visited{
+.nav-item>a:hover,.active-line>a
+{
 	border-bottom: 2px solid #fff;
 }
+
 .navbar-header{
 	margin-left: 17%;
 }
@@ -101,6 +102,9 @@ a:hover{text-decoration: none;}
 	border-bottom: 1px solid #edf1f2;
 	padding: 10px 0;
 	position: relative;
+}
+.position-direction a:hover{
+	color: #212529;
 }
 .direction{
 	color: #999999;
