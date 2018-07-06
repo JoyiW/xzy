@@ -243,11 +243,9 @@ a:hover{text-decoration: none;}
 }
 .ec-middle{
 	text-indent:20px;
-}
-.ec-middle{
 	margin: 15px 35px 90px 35px;
-
 }
+
 @media(max-width: 576px){
 	.main{
 		left: 0;
