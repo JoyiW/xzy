@@ -1,0 +1,567 @@
+body{
+	background-color: #fafafa;
+}
+
+
+.container-fluid{
+	padding: 0;
+	
+}
+.container-fluid .row{
+	margin: 0;
+}
+/*header*/
+.header-box {
+	background-color: #ffffff;
+	color: #29b078;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 15px;
+	width: 100%;
+	font-size: 7px;
+}
+.wechat {
+	background-image: url(images/wechat.png);
+	height: 24px;
+	width: 25px;
+}
+.qq {
+	background-image: url(images/qq.png);
+	height: 24px;
+	width: 25px;
+	margin: 0 0 0 10px;
+}
+.weibo {
+	background-image: url(images/weibo.png);
+	height: 24px;
+	width: 25px;
+	margin: 0 0 0 10px;
+}
+.header-img {
+	display: flex;
+	transform: scale(.5,.5);
+}
+.header p {
+	margin: 0;
+}
+.header {
+	position: fixed;
+    top: 0;
+    background-color: #fafafa;
+    width: 100%;
+    z-index: 16;
+}
+
+.login {
+	display: none;
+	float: right;
+	margin: 5px 0;
+}
+.login-left {
+	border-right: 1px solid #29b078;
+}
+.login-left,
+.login-right {
+	padding: 0px 6px;
+	color: black;
+}
+.login-left:hover,.login-right:hover{
+	color: black;
+}
+@media (max-width: 576px) {
+	.header-img {
+		display: none;
+	}
+	.header-box p {
+		visibility: hidden;
+	}
+	.login {
+		display: block;
+	}
+}
+
+/*nav*/
+.navbar{
+	display: flex;
+	padding: 0;
+	width: 100%;
+	background-color: #1db176;
+	position: fixed;
+	z-index: 99;
+	top: 35px;
+}
+.logo{
+	background: url(images/LOGO.png);
+	width: 54px;
+	height: 25px;
+	background-size: 54px 25px;
+	margin-left: 10px;
+}
+.navbar-toggler-icon{
+	width: 18px;
+	height: 12px;
+	padding: 3.6px 0;
+	margin: 13px 10px 13px 0;
+	border-top: 1.5px solid #1d7b54;
+	border-bottom: 1.5px solid #1d7b54;
+	background-color: #1d7b54;
+	background-clip: content-box;
+}
+.navbar-toggler:visited,
+.navbar-toggler:focus{
+	outline: transparent;
+}
+@media (min-width: 576px) {
+	.logo {
+		display: none;
+	}
+}
+@media(min-width: 576px){
+	.collapse{
+	display: flex;
+	justify-content: flex-end;
+}
+}
+
+@media(max-width: 576px){
+	.navbar-nav{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	}
+}
+.navbar-nav{
+	margin-right: 25px;
+}
+
+.nav-item>a{
+	border-bottom: 2px solid #1db176;
+	padding: 16px;
+	margin: 0 7px;
+	color: #fff;
+	font-size: 8px;
+}
+.nav-item>a:hover,.active-line>a{
+	border-bottom: 2px solid #fff;
+}
+
+/*banner*/
+.banner .container-fluid{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 83px;
+	padding: 0;
+}
+
+.banner .col-sm-12 {
+	padding: 0;
+}
+.carousel-indicators {
+	margin-left: 0;
+	width: auto;
+}
+
+.carousel-indicators{
+	bottom: 10px;
+	margin: 0 ;
+	width: 100%;
+}
+.carousel-indicators>li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+
+}
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  .carousel-control-prev-icon ,.carousel-control-next-icon{
+  	width: 13px;
+  	height: 26px;
+
+  }
+
+  /*main*/
+ .main{
+ 	position: relative;
+ 	top: 83px;
+ }
+ .advantage{
+ 	display:flex;
+ 	justify-content: center;
+ 	padding: 83px 15px 0 15px;
+ }
+ .ad{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	padding: 0;
+ }
+ .ad-img1{
+ 	background: url(images/rocket.png);
+ 	width: 22px;
+ 	height: 31px;
+ 	background-size: 22px 31px;
+ }
+ .ad-img2{
+ 	background: url(images/archive.png);
+ 	width: 30px;
+ 	height: 24px;
+ 	background-size: 30px 24px;
+ }
+ .ad-img3{
+ 	background: url(images/Shape-253.png);
+ 	width: 26px;
+ 	height: 28px;
+ 	background-size: 26px 28px;
+ }
+ .ad strong{
+ 	font-size: 9px;
+ 	padding-top: 16px;
+ }
+ .ad p{
+ 	font-size: 8px;
+ 	color: #999999;
+ 	padding-top: 20px;
+ }
+.ad-num{
+	border-left: 1px dashed #999;
+	padding: 0;
+}
+.ad-num-img{
+	background: url(images/user.png);
+	width: 7px;
+	height: 7px;
+	background-size: 7px 8px;
+
+}
+.an1{
+	padding-top: 30px;
+}
+.an2{
+	padding-top: 20px;
+}
+.num{
+	display: flex;
+	align-items: center;
+}
+.num strong{
+	padding-left: 8px;
+	color: #1ba36e;
+	font-size: 9px;
+}
+.an1 p,.an2 p{
+	color: #999999;
+	font-size: 9px;
+	margin: 0;
+}
+@media (max-width: 576px){
+	.ad-num{
+		border: none;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.an1,.an2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/*如何学习*/
+.how-to-study{
+	padding-top: 50px;
+}
+
+.how-to-study .box{
+	padding-top: 28px;
+}
+.study-line1,.study-line2{
+	display: flex;	
+}
+.study-line2{
+	padding-top: 45px;
+}
+.step{
+	display: flex;
+	padding-right: 14px;
+	padding-left: 0;
+	align-items: center;
+}
+.step-num{
+	border-radius: 50%;
+	padding: 0 15px;
+	height: 35px;
+	background-color: #fff;
+	font-size: 9px;
+	color: #1db176;
+	text-align: center;
+	line-height: 35px;
+	box-shadow: 0px 0px 1px #999;
+	
+}
+.step p{
+	width: 100%;
+	padding: 0 20px 0 10px;
+	font-size: 7px;
+	color: #999;
+	margin-left: 8px;
+}
+.arrow{
+	background: url(images/arrow.png);
+	width: 16px;
+	height: 15px;
+	background-size: 16px 15px;
+}
+
+@media(max-width: 576px){
+	.study-line1,.study-line2{
+		
+		flex-direction: column;
+		
+	}
+	.study-line2{
+		
+		padding-top: 0;
+	}
+	.step{
+		padding-top: 10px;
+
+	}
+	.arrow{
+		display: none;
+	}
+}
+
+
+/*优秀学员展示*/
+.student-show{
+	padding-top: 60px;
+}
+.car-box{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.student-box{
+	padding: 13px 16px 20px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	margin-top: 35px;
+}
+.student-box strong{
+	font-size: 9px;
+	padding-top: 20px;
+}
+.student-box p{
+	font-size: 8px;
+	color: #999;
+	padding-top: 10px;
+	max-width: 200px;
+}
+.stu-img{
+	background: url(images/Avatar.jpg);
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-size: 64px 64px;
+}
+
+.carousel-indicators .active{
+	background-color:  #1db176;
+}
+.carousel-item{
+	margin-bottom: 10px;
+}
+
+
+.sb{
+	margin-right: 20px;
+}
+
+/*战略合作企业*/
+.cooperative-enterprise{
+	padding-top: 65px;
+	padding-right: 15px;
+}
+.cooperative-enterprise .box{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 30px 60px 30px;
+}
+.enterprise{
+	width: 118px;
+	height: 87px;
+}
+.enterprise:hover{
+	box-shadow:0 0 5px #999;
+}
+.img1{
+	background: url(images/alibaba.png) center no-repeat;
+	background-size: 62px 62px;background-color: #fff;
+}
+.img2{
+	background: url(images/jinshanyun.png) center;
+	background-size: 119px 69px;background-color: #fff;
+}
+.img3{
+	background: url(images/huanxin.png) center no-repeat;
+	background-size: 67px 35px;background-color: #fff;
+}
+.img4{
+	background: url(images/ronglian.png) center no-repeat;
+	background-size: 96px 96px;background-color: #fff;
+}
+.img5{
+	background: url(images/qiniu.png) center no-repeat;
+	background-size: 62px 62px;background-color: #fff;
+}
+
+@media(max-width: 576px){
+	.cooperative-enterprise .box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.enterprise{
+		margin-bottom: 2px;
+	}
+}
+/*友情链接*/
+.link{
+	position: relative;
+	top: 50px;
+
+	background-color: #fff;
+}
+.link-list{
+	padding-left: 30px;
+	padding-right: 45px;
+	display: flex;
+	justify-content: space-between;
+}
+.link-list li{
+	color: #999999;
+	font-size: 7px;
+}
+.link .title{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+@media(max-width: 576px){
+	.box{
+		display: flex;
+	}
+	.link-list{
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		margin-left: 20%;
+	}
+
+}
+
+
+/*title*/
+.title{
+	text-align: center;
+	font-size: 9px;
+}
+
+/*box*/
+.box p{
+	margin: 0;
+}
+
+/*footer*/
+.footer{
+	background-color: #1ba36e;
+	color: #fff;
+	font-size: 8px;
+	top: 115px;
+	position: relative;
+	width: 100%;
+
+}
+.footer a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer p{
+	margin-bottom: 0;
+}
+.footer1{
+	display: flex;
+	padding-top: 20px;
+	justify-content: space-between;
+	margin-left: 15px;
+	margin-right: 60px;
+	margin-bottom: 18px;
+}
+.us{
+	padding-top: 45px;
+}
+.us-line{
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 0 4px;
+	margin: 0 3px;
+}
+.al{
+	margin-top: 15px;
+}
+.al-l{
+	margin-left: 20px;
+}
+.about-wechat p{
+	font-size: 8px;
+}
+
+.aw-img{
+	background: url(images/erweima.png);
+	width: 46px;
+	height: 46px;
+	background-size: 46px 46px;
+}
+.column{
+	flex:1;
+}
+.about-link{
+	padding-left: 10%;
+}
+.about-wechat{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.column+.column{margin-left:20px;}
+.footer2{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	border-top: 1px solid #26c184;
+}
+@media(max-width: 576px){
+	.footer1{
+		display: flex;
+		flex-direction: column;
+		margin-left: 35%;
+	}
+	.about-link{
+		padding: 0;
+	}
+	.column+.column{
+		margin-left:0;
+		margin-top: 10px;
+	}
+	.about-wechat{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+}

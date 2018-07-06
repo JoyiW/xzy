@@ -2,60 +2,136 @@ body{
 	background-color: #fafafa;
 }
 a:hover{text-decoration: none;color: #fff;}
-/*header*/
-.cheader{
-	position: fixed;
-	width: 100%;
+.container-fluid{
 	padding: 0;
-	background-color: #fff;
-	top: 0;
-	z-index: 99;
+	
 }
-.header{
-	background-color: #fff;
+.container-fluid .row{
+	margin: 0;
+}
+/*header*/
+.header-box {
+	background-color: #ffffff;
+	color: #29b078;
 	display: flex;
-	position: absolute;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 19%;
-	
-}
-.row{
-	justify-content: center;
-}
-	
-.hotline{
-	margin: 0;
-	padding: 7px 0;
-	color: #1db176;
+	padding: 6px 15px;
+	width: 100%;
 	font-size: 7px;
 }
-.share-group{
-	margin-top: 4px;
-	font-size: 0;
-	right: 0;
+.wechat {
+	background-image: url(images/wechat.png);
+	height: 24px;
+	width: 25px;
 }
-.wechat>img,.qq>img,.weibo>img{
-	width: 14px;
-	background-size: 14px 12px;
+.qq {
+	background-image: url(images/qq.png);
+	height: 24px;
+	width: 25px;
+	margin: 0 0 0 10px;
 }
-.qq>img, .weibo>img{
-	margin-left: 9px;
+.weibo {
+	background-image: url(images/weibo.png);
+	height: 24px;
+	width: 25px;
+	margin: 0 0 0 10px;
+}
+.header-img {
+	display: flex;
+	transform: scale(.5,.5);
+}
+.header p {
+	margin: 0;
+}
+.header {
+	position: fixed;
+    top: 0;
+    background-color: #fafafa;
+    width: 100%;
+    z-index: 16;
+}
+
+.login {
+	display: none;
+	float: right;
+	margin: 5px 0;
+}
+.login-left {
+	border-right: 1px solid #29b078;
+}
+.login-left,
+.login-right {
+	padding: 0px 6px;
+	color: black;
+}
+.login-left:hover,.login-right:hover{
+	color: black;
+}
+@media (max-width: 576px) {
+	.header-img {
+		display: none;
+	}
+	.header-box p {
+		visibility: hidden;
+	}
+	.login {
+		display: block;
+	}
 }
 
 /*nav*/
 .navbar{
-	position: fixed;
 	display: flex;
 	padding: 0;
-	justify-content: space-between;
 	width: 100%;
 	background-color: #1db176;
+	position: fixed;
 	z-index: 99;
-	top: 29px;
+	top: 35px;
+}
+.logo{
+	background: url(images/LOGO.png);
+	width: 54px;
+	height: 25px;
+	background-size: 54px 25px;
+	margin-left: 10px;
+}
+.navbar-toggler-icon{
+	width: 18px;
+	height: 12px;
+	padding: 3.6px 0;
+	margin: 13px 10px 13px 0;
+	border-top: 1.5px solid #1d7b54;
+	border-bottom: 1.5px solid #1d7b54;
+	background-color: #1d7b54;
+	background-clip: content-box;
+}
+.navbar-toggler:visited,
+.navbar-toggler:focus{
+	outline: transparent;
+}
+@media (min-width: 576px) {
+	.logo {
+		display: none;
+	}
+}
+@media(min-width: 576px){
+	.collapse{
+	display: flex;
+	justify-content: flex-end;
+}
+}
+
+@media(max-width: 576px){
+	.navbar-nav{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	}
 }
 .navbar-nav{
-	margin-right: 17%;
+	margin-right: 25px;
 }
 
 .nav-item>a{
@@ -65,28 +141,21 @@ a:hover{text-decoration: none;color: #fff;}
 	color: #fff;
 	font-size: 8px;
 }
-.nav-item>a:hover,.active-line>a
-{
+.nav-item>a:hover,.active-line>a{
 	border-bottom: 2px solid #fff;
 }
 
-.navbar-header{
-	margin-left: 17%;
-}
-.img-logo img{
-	width: 54px;
-	height: 26px;
-
 /*main*/
-}.main{
+.main{
 	position: relative;
-	width: 63%;
-	height: auto;
-	top: 77px;
-	left: 19%;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 45px;
+	top: 82px;
+	
 }
 .main-locate{
-	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 15px;
 	font-size: 8px;
 }
@@ -105,7 +174,8 @@ a:hover{text-decoration: none;color: #fff;}
 	position: relative;
 }
 .position-direction a:hover{
-	color: #212529;
+	color: #fff;
+	background-color: #1db176;
 }
 .direction{
 	color: #999999;
@@ -125,7 +195,7 @@ a:hover{text-decoration: none;color: #fff;}
 }
 .zhiwei{
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 }
 .position-content{
 	border-radius: 5px;
@@ -133,8 +203,9 @@ a:hover{text-decoration: none;color: #fff;}
 	margin-top: 25px;
 	border: 1px solid #edf1f2;
 	position: relative;
-	/*width: 190px;*/
+	
 }
+
 .cover{
 	background-color: rgba(0,0,0,.76);
 	border-radius: 5px;
@@ -269,7 +340,15 @@ a:hover{text-decoration: none;color: #fff;}
 .level4 span{
 	color: red;
 }
-
+@media(max-width: 576px){
+	.zhiwei{
+		display: flex;
+		flex-direction: column;
+	}
+	.pcml{
+		margin-left: 0;
+	}
+}
 /*footer*/
 .footer{
 	background-color: #1ba36e;
@@ -291,7 +370,8 @@ a:hover{text-decoration: none;color: #fff;}
 	display: flex;
 	padding-top: 20px;
 	justify-content: space-between;
-	margin-left: 19%;
+	margin-left: 15px;
+	margin-right: 60px;
 	margin-bottom: 18px;
 }
 .us{
@@ -319,11 +399,40 @@ a:hover{text-decoration: none;color: #fff;}
 	height: 46px;
 	background-size: 46px 46px;
 }
-.column{flex:1;}
+.column{
+	flex:1;
+}
+.about-link{
+	padding-left: 10%;
+}
+.about-wechat{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
 .column+.column{margin-left:20px;}
 .footer2{
 	padding-top: 4px;
 	padding-bottom: 4px;
 	text-align: center;
 	border-top: 1px solid #26c184;
+}
+@media(max-width: 576px){
+	.footer1{
+		display: flex;
+		flex-direction: column;
+		margin-left: 35%;
+	}
+	.about-link{
+		padding: 0;
+	}
+	.column+.column{
+		margin-left:0;
+		margin-top: 10px;
+	}
+	.about-wechat{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 }
