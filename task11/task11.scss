@@ -1,0 +1,153 @@
+$c1:#5ac0ce;
+$c2:#eff0f4;
+$c3:#fff;
+$fs1:36px;
+$fs2:32px;
+$top1:17px;
+$p:30px;
+@mixin pnf($horz,$radius:$p){
+  padding-#{$horz}:$radius;
+  font:{
+    size: $fs1;
+  }
+}
+@mixin  position{
+  position: relative;
+}
+@mixin d{
+  display: flex;
+  justify:{
+    content: space-between;
+  }
+}
+@mixin width{
+  width: 100%;
+}
+a{
+  text:{
+    decoration: none;
+  }
+  color: $c3;
+}
+body{
+  background:{
+    color: $c2;
+  }
+  padding: 0;
+  margin: 0;
+}
+.header{
+  background:{
+    color: $c1;
+  }
+  @include pnf(top,27px);
+  color: $c3;
+  @include width;
+  text:{
+    align: center;
+  }
+  @include d;
+}
+
+.logIn{
+  @include pnf(bottom,27px);
+}
+.close{
+  @include pnf(left);
+  font:{
+    size: $fs2;
+  }
+}
+.signIn{
+  @include pnf(right);
+  font:{
+    size: $fs2;
+  }
+}
+.main{
+  .input-box{
+    background:{
+      color: $c3;
+    }
+    margin:{
+      top: $top1;
+    }
+    @include d ;
+    @include position;
+  }
+  input{
+    vertical:{
+      align: top;
+    }
+    outline: none;
+    @include width;
+    border: 0;
+    padding: 0;
+    height: auto;
+  }
+}
+.phone{
+  background: url("images/iphone.png") no-repeat center;
+}
+.pwd{
+  background: url("images/locked.png") no-repeat center;
+}
+.icon{
+  margin:25px 0 25px 30px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.line{
+  width: 2px;
+  height: auto;
+  background:{
+    color: $c2;
+  }
+  margin: 25px 35px;
+}
+.footer{
+  @include position;
+  background:{
+    color: $c1;
+  }
+  margin:{
+    top: 70px;
+  }
+
+}
+.button{
+  @include width;
+  display: block;
+  vertical:{
+    align: bottom;
+  }
+  line:{
+    height: 100px;
+  }
+  font:{
+    size: $fs1;
+  }
+  letter:{
+    spacing: 10px;
+  }
+  text:{
+    align: center;
+    decoration: none;
+  }
+  height: 100px;
+}
+.fpwd{
+  position: absolute;
+  right: 10px;
+  color: $c1;
+  margin:{
+    top: 20px;
+  }
+  font:{
+    size: $fs2;
+  }
+  &:hover{
+    color: $c1;
+  }
+}

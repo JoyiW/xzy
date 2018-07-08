@@ -1,0 +1,91 @@
+a {
+  text-decoration: none;
+  color: #fff; }
+
+body {
+  background-color: #eff0f4;
+  padding: 0;
+  margin: 0; }
+
+.header {
+  background-color: #5ac0ce;
+  padding-top: 27px;
+  font-size: 36px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; }
+
+.logIn {
+  padding-bottom: 27px;
+  font-size: 36px; }
+
+.close {
+  padding-left: 30px;
+  font-size: 36px;
+  font-size: 32px; }
+
+.signIn {
+  padding-right: 30px;
+  font-size: 36px;
+  font-size: 32px; }
+
+.main .input-box {
+  background-color: #fff;
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+.main input {
+  vertical-align: top;
+  outline: none;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  height: auto; }
+
+.phone {
+  background: url("images/iphone.png") no-repeat center; }
+
+.pwd {
+  background: url("images/locked.png") no-repeat center; }
+
+.icon {
+  margin: 25px 0 25px 30px;
+  width: 50px;
+  height: 50px;
+  display: inline-block; }
+
+.line {
+  width: 2px;
+  height: auto;
+  background-color: #eff0f4;
+  margin: 25px 35px; }
+
+.footer {
+  position: relative;
+  background-color: #5ac0ce;
+  margin-top: 70px; }
+
+.button {
+  width: 100%;
+  display: block;
+  vertical-align: bottom;
+  line-height: 100px;
+  font-size: 36px;
+  letter-spacing: 10px;
+  text-align: center;
+  text-decoration: none;
+  height: 100px; }
+
+.fpwd {
+  position: absolute;
+  right: 10px;
+  color: #5ac0ce;
+  margin-top: 20px;
+  font-size: 32px; }
+  .fpwd:hover {
+    color: #5ac0ce; }
+
+/*# sourceMappingURL=task11.css.map */
