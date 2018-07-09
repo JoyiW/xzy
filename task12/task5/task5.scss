@@ -1,0 +1,202 @@
+$b:border;$m:margin;$bg:background;$p:padding;
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	/*font-size: 125%;*/
+	font:{
+		size: 62.5%;
+	}
+}
+body{
+	#{$bg}-color: #ffffff;
+}
+button{
+	border: 0.1rem solid #5ac0ce;
+	#{$b}-radius: 1rem;
+	height: 8.8rem;
+	font:{
+		size: 3.4rem;
+	}
+	outline: none;
+}
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.index{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	#{$bg}-color: #5ac0ce;
+	color: #fff;
+	height: 8.4rem;
+	line:{
+		height: 8.4rem;
+	}
+	z-index: 999;
+}
+ .left{
+	float: left;
+	margin:2.3rem 0 0 3rem;
+	width: 3rem;
+	height: 4rem;
+}
+.title{
+	margin: 0 3rem;
+	font:{
+		size: 3.4rem;
+		family: 'SimHei', 'STHeiti', sans-serif;
+    	weight: 500; 
+	}
+	text:{
+		align: center;
+	}
+}
+
+main{
+	position: absolute;
+	width: 100%;
+	top: 8.4rem;
+	bottom: 12rem;
+	overflow-y: auto;
+}
+.content{
+	height: auto;
+}
+.info{
+	position: relative;
+}
+.bg{
+	height: 32.8rem;
+	background: url(images/bg.png) no-repeat center;
+	#{$bg}-size: 100% 100%;
+}
+.person{
+	position: absolute;
+	top: 7.8rem;
+	left: 2rem;
+	display: flex;
+	align:{
+		items: center;
+	}
+	height: 17.2rem;
+}
+.head{
+	width: 17rem;
+	height: 17rem;
+	margin: 4rem 1.5rem;
+}
+.detail{
+	flex: 1;
+	color: #fff;
+	#{$m}-left: 1.5rem;
+}
+.name{
+	font:{
+		size: 3.6rem;
+	}
+	#{$m}-bottom: 0.6rem;
+	display: inline-block;
+}
+.age{
+	font:{
+		size: 2.8rem;
+	}
+	#{$m}-bottom: 2.4rem;
+	#{$m}-left: 1rem;
+	display: inline-block;
+}
+.location{
+	font-size: 2.4rem;
+}
+.location img{
+	width: 1.8rem;
+	height: 2.3rem;
+	vertical-align: middle;
+}
+.skill{
+	font-size: 3.2rem;
+}
+.stitle{
+	height: 10rem;
+	line-height: 10rem;
+	#{$b}-bottom: 0.1rem solid #e1e5e7;
+	margin: 0;
+}
+.stitle>span{
+	#{$m}-left: 3rem;
+	#{$b}-left: 0.2rem solid #5fc0cd;
+	#{$p}-left: 3rem;
+	font-size: 3.2rem;
+}
+.scontent{
+	margin: 0 6rem;
+}
+.scondition{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 10rem;
+	line-height: 10rem;
+	#{$b}-bottom: 0.1rem solid #e1e5e7;
+
+}
+.scondition img{
+	height: 2.5rem;
+	width: 2.5rem;
+	margin: 0 1rem;
+}
+.line{
+	#{$b}-right: 0.2rem solid #e1e5e7;
+	height: 2.8rem;
+	#{$m}-left: 1rem;
+}
+.srow{
+	display: flex;
+	padding: 3.6rem 0;
+	#{$b}-bottom: 0.1rem solid #e1e5e7;
+}
+.srow label{
+	padding: 0 2.4rem;
+	#{$b}-right: 0.1rem solid #e1e5e7;
+	color: #999;
+	text-align: center;
+	height: 4.2rem;
+}
+.srow span{
+	flex: 1;
+	#{$p}-left: 2.4rem;
+	display: inline-flex;
+}
+.price{
+	color: #e46060;
+}
+
+
+footer{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	bottom: 2.6rem;
+	padding: 1.4rem 0;
+	#{$bg}-color: #fff;
+}
+.lmsg{
+	flex: 1;
+	margin: 0 1.4rem 0 3.7rem;
+	color: #5fc0cd;
+	#{$bg}-color: #fff;
+}
+.contect{
+	flex: 1;
+	margin: 0 3.7rem 0 1.4rem;
+	color: #fff;
+	#{$bg}-color: #5fc0cd;
+}
