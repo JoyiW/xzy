@@ -1,0 +1,2 @@
+@import url(normalize.css);.header{position:fixed;top:0;width:100%;background-color:#fff;z-index:16}.main{background-color:#fafafa}.nav,.nav-phone{background-color:#29b078;position:fixed;top:57px;width:100%;z-index:16;display:flex;justify-content:space-between;align-items:center}.footer{background-color:#29b078;color:#fff}.copyright{background-color:#29b078;border-top:1px solid #dedede;color:#fff;text-align:center;padding:10px}
+/*# sourceMappingURL=task14.common.css.map */

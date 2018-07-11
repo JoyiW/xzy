@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+@import 'normalize.css';
+@import 'task14.mixin.scss';
+
+
+/* HEADER */
+.header {
+	position: fixed;
+	top: 0;
+	width:100%;
+	background-color: $white;
+	z-index: 16;
+}
+
+/* MAIN */
+.main{
+	background-color: $offwhite;
+}
+
+/* NAV */
+.nav,.nav-phone {
+	background-color: $green;
+	position: fixed;
+    top: 57px;
+    width: 100%;
+    z-index: 16;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* FOOTER */
+.footer {
+	
+	background-color: $green;
+	color: $white;
+}
+
+/* COPYRIGHT */
+.copyright{
+	background-color: $green;
+	border-top: 1px solid #dedede;
+	color: $white;
+	text-align: center;
+	padding: 10px;
+}
