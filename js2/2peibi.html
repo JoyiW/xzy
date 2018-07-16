@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="2peibi.css">
+	<title>参数设置</title>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<a href="1index.html"><img src="images/backleft.png"></a>
+		<span>参数设置</span>
+		<a href="#"><img src="images/circled-help-w.png"></a>
+	</div>
+	<!-- main -->
+	<div class="main">
+		<div class="peibi ml mr">
+			<div class="pb-title">玩家配比</div>
+			<div class="pb-box">
+				<ul class="option" class="option"></ul>
+				<div class="pb-set">
+					<button>点击设置</button>
+					<img src="images/pencil.png">
+				</div>
+			</div>
+		</div>
+		<div class="pb-word">
+			<input type="text" placeholder="水民词组">
+			<input type="text" placeholder="幽灵词组" class="mb">
+		</div>
+		<div class="pb-num ml mr">
+			<span class="ml">玩家人数</span><input id="changedNum" type="text" value="6"><span>人</span>
+			<div class="ranger">
+				<button class="btn1" id="btn1"></button>
+				<input type="range" id="range" min="4" max="18" value="6">
+				<button class="btn2" id="btn2"></button>
+			</div>
+		</div>
+	<div class="go-card ml mr"><a href="#" >去发牌</a></div>
+	</div>
+	
+<script type="text/javascript" src="2peibi.js"></script>
+</body>
+</html>

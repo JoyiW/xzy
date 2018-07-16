@@ -1,0 +1,106 @@
+@import 'mixin.scss';
+@import 'normalize.css';
+@import 'common.scss';
+// header
+.header{
+	background:$blue;
+}
+.header img{
+	margin: {
+		top: 1rem;
+		left: 1rem;
+		bottom: 1rem;
+	}
+	transform: scale(.5,.5);
+	cursor: pointer;
+}
+// main
+.main{
+	top:4.7rem;
+	background:#f0f0f0;
+	text-align: center;
+}
+.last-game{
+	margin: 1.2rem 1rem;
+	border:0.1rem solid $grey;
+	background:#fff;
+	color: $grey;
+	font-size: 1.7rem;
+    outline: none;
+    position: relative;	
+    padding:{
+    	top:2rem;
+    	bottom:2rem;
+    }
+}
+.last-game a{
+	right: 1rem;
+	position: absolute;
+
+}
+.last-game img{
+
+	width:1.1rem;
+	height:2.2rem;
+}
+.game-version{
+    background: #ffffff;
+    margin: {
+    	right: 1rem;
+    	left: 1rem;
+    	bottom: 3rem;
+    }
+    border:0.1rem solid $grey;
+}
+.game-name{
+	color: $orange;
+	border-bottom:0.1rem solid $orange;
+	padding: 1.5rem;
+	font-size: 1.9rem;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    background-color: #ffffff;
+}
+.game{
+	margin: 1.5rem 1.1rem 0 1.1rem;
+	padding: 2.5rem auto;
+
+}
+.game button{
+	cursor: pointer;
+	background:$blue;
+	color: #fff;
+	font-size: 1.6rem;
+    padding: 2.5rem 9rem;
+    border: none;
+    outline: none;
+}
+.game p{
+	color: $grey;
+	font-size: 1.2rem;
+}
+.dot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.d{
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #f0f0f0;
+  margin-left: 0.5rem;
+}
+.dblue{
+  background: $blue;
+}
+.triangle{
+	background:url('images/triangle.png');
+	width:1.3rem;
+	height: 2.8rem;
+	background-size:1.4rem 2.8rem;
+	position: fixed;
+	top:50%;
+	right:2rem;
+}

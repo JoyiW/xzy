@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import 'normalize.css';
+@import 'mixin.scss';
+html{
+	font-size:62.5%;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	z-index: 1;
+	align-items: center;
+	justify-content: space-between;
+	top:0
+}
+.main{
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+}
+.footer{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
