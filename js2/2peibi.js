@@ -45,7 +45,7 @@ setBtn.onclick = function () {
     while (option.hasChildNodes()) {
         option.removeChild(option.firstChild);
     }
-
+    
     //根据分配规则在数组中添加对象
     if (setNum == 4 || setNum == 5) {
         for (var i = 0; i < 1; i++) {
@@ -87,11 +87,11 @@ setBtn.onclick = function () {
     var sumArr=killer.concat(civilian);
 
     //数组乱序
-    realArr=Array.prototype.slice.call(sunArr,0);
-    var sunRandom=new Array();
+    realArr=Array.prototype.slice.call(sumArr,0);
+    var sumRandom=new Array();
     for(i=0;i<sumArr.length;i++){
         var num=Math.floor(Math.random()*realArr.length);
-        sunRandom.push(realArr[num]);
+        sumRandom.push(realArr[num]);
         realArr.splice(num,1);
     }
     
