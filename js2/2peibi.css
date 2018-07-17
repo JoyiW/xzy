@@ -65,6 +65,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .pb-box ul {
+    list-style-type: square;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center; }
+    .pb-box ul li {
+      width: 50%;
+      text-indent: -2rem; }
 
 .pb-set {
   border-top: 0.1rem solid #d9d9d9;
