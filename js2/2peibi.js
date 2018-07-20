@@ -52,42 +52,28 @@ setBtn.onclick=function () {
     //添加杀手
     for(var k=1;k<=killerNum;k++){
         var lis=document.createElement('li'); 
-        option.appendChild(lis).innerText="杀手"+1+"人";
+        option.appendChild(lis).innerText="杀手1人";
         lis.style.color = '#29bde0';
     }
     for(var c=1;c<=civilianNum;c++){
         var lis=document.createElement('li'); 
-        option.appendChild(lis).innerText="平民"+1+"人";
+        option.appendChild(lis).innerText="平民1人";
         lis.style.color = '#fbb435';
     }
     //添加li的id
     var liId=document.getElementsByTagName('li');
-    for (var i = 0; i <liId.length; i++) {
+    liArr= Array.prototype.slice.call(liId, 0);
+    for(var i=0;i<liId.length;i++){
         liId[i].id='li'+i;
-    }
-    //获取li将其变成数组存储到liArr中
-    var liArr=[];
-    for(var l=0;l<liId.length;l++){
-        liArr.push(liId[l]);
     }
 
     console.log(liArr);
     //乱序排列liArr
     var result=[];
-    // for(var r=0;r<setNum;r++){
-    //     var ran=Math.floor(Math.random()*setNum);
-    //     console.log(ran);
-    //     result.push(liArr.splice(ran,1)[0]);
-    //     // console.log(result);
-    // };
-    for(var r=0;r<setNum;r++){
+    for(var r=0;r<liArr.length;r++){
         var ran=Math.floor(Math.random()*(liArr.length-r));
         result.push(liArr[ran]);
         liArr[ran]=liArr[liArr.length-r-1];
     }
     console.log(result);
-
-
-    //将乱序后的数组添加到原数组中
-
 }
