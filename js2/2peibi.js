@@ -42,38 +42,88 @@ var option=document.getElementById("option");  //获取列表
 
 setBtn.onclick=function () {
     var setNum=changedNum.value;    
+    // var killerNum=Math.floor(setNum/3);
+    // var civilianNum=setNum-killerNum;
+    //重置节点
+    // while (option.hasChildNodes()) {
+    //     option.removeChild(option.firstChild);
+    // }
+
+    //添加杀手
+//     for(var k=1;k<=killerNum;k++){
+//         var lis=document.createElement('li'); 
+//         option.appendChild(lis).innerText="杀手1人";
+//         lis.style.color = '#29bde0';
+//     }
+//     for(var c=1;c<=civilianNum;c++){
+//         var lis=document.createElement('li'); 
+//         option.appendChild(lis).innerText="平民1人";
+//         lis.style.color = '#fbb435';
+//     }
+//     //添加li的id
+//     var liId=document.getElementsByTagName('li');
+//     liArr= Array.prototype.slice.call(liId, 0);
+//     for(var i=0;i<liId.length;i++){
+//         liId[i].id='li'+i;
+//     }
+
+//     console.log(liArr);
+//     //乱序排列liArr
+//     var result=[];
+//     for(var r=0;r<liArr.length;r++){
+//         var ran=Math.floor(Math.random()*(liArr.length-r));
+//         result.push(liArr[ran]);
+//         liArr[ran]=liArr[liArr.length-r-1];
+//     }
+//     console.log(result);
+
+
+// 每次点击重置数组对象
     var killerNum=Math.floor(setNum/3);
     var civilianNum=setNum-killerNum;
-    //重置节点
+    var killer=[],civilian=[];
+    function obj(state, identify) {
+            this.state = state;
+            this.role = identify;
+            this.date = '';
+            this.style = '';
+        }
+
+//重置节点
     while (option.hasChildNodes()) {
         option.removeChild(option.firstChild);
     }
+//根据分配规则在数组中添加对象
+    for (var i = 0; i <killerNum; i++) {
+        killer[i]=new obj('living','killer');
+    }
+    
+    for(var j=0; j<civilianNum;j++){
 
-    //添加杀手
-    for(var k=1;k<=killerNum;k++){
-        var lis=document.createElement('li'); 
-        option.appendChild(lis).innerText="杀手1人";
-        lis.style.color = '#29bde0';
-    }
-    for(var c=1;c<=civilianNum;c++){
-        var lis=document.createElement('li'); 
-        option.appendChild(lis).innerText="平民1人";
-        lis.style.color = '#fbb435';
-    }
-    //添加li的id
-    var liId=document.getElementsByTagName('li');
-    liArr= Array.prototype.slice.call(liId, 0);
-    for(var i=0;i<liId.length;i++){
-        liId[i].id='li'+i;
+        civilian[j]=new obj('living','civilian');
     }
 
-    console.log(liArr);
-    //乱序排列liArr
-    var result=[];
-    for(var r=0;r<liArr.length;r++){
-        var ran=Math.floor(Math.random()*(liArr.length-r));
-        result.push(liArr[ran]);
-        liArr[ran]=liArr[liArr.length-r-1];
+    var sumArr = killer.concat(civilian);
+// 数组乱序
+    realArr = Array.prototype.slice.call(sumArr, 0);
+    var sumRandom = new Array();
+    for (i = 0; i < sumArr.length; i++) {
+        var num = Math.floor(Math.random() * realArr.length);
+        sumRandom.push(realArr[num]);
+        realArr.splice(num, 1);
     }
-    console.log(result);
+    sessionStorage.sumRandom = JSON.stringify(sumRandom); 
+//实现随机分配
+    for (i = 0; i < sumRandom.length; i++) {
+        var li = document.createElement('li');
+        if (sumRandom[i].role == 'killer') {
+            option.appendChild(li);
+            li.innerHTML = "杀手 1 人";
+            li.style.color = '#29bde0';
+        } else if (sumRandom[i].role == 'civilian') {
+            option.appendChild(li);
+            li.innerHTML = "平民 1 人";
+            li.style.color = '#fbb435';
+        }
+    }
 }
