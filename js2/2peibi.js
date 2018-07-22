@@ -112,6 +112,7 @@ setBtn.onclick=function () {
         sumRandom.push(realArr[num]);
         realArr.splice(num, 1);
     }
+// 存储数据
     sessionStorage.sumRandom = JSON.stringify(sumRandom); 
 //实现随机分配
     for (i = 0; i < sumRandom.length; i++) {
@@ -127,3 +128,4 @@ setBtn.onclick=function () {
         }
     }
 }
+

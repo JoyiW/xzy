@@ -1,0 +1,91 @@
+@import 'mixin.scss';
+@import 'normalize.css';
+@import 'common.scss';
+body{
+	background:$blue;
+}
+// header
+.header{
+	background:$blue;
+	span{
+		color: #fff;
+		font-size:1.7rem;
+		padding:{
+			top:0.7rem;
+			bottom: 0.7rem;
+			}
+		}
+	a{
+		font-size:0;
+	}
+	img{
+		height:2rem;
+		margin: 0 1rem;
+	}
+	border-bottom: 0.1rem solid rgba(255,255,255,.3);
+	z-index: 2;
+}
+// main
+.main{
+	top:3.5rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.number{
+	border: 0.2rem solid #ffedc5;
+	border-radius: 50%;
+	background-color: #fff;
+	width: 3.8rem;
+	height: 3.8rem;
+	margin-top:5rem;
+	text-align: center;
+	color: #f56b81;
+	font:{
+		size: 2rem;
+		weight:bold;
+	}
+	line-height: 3.8rem;
+	z-index: 1;
+}
+.flop-card{
+	border: 0.2rem solid #fff;
+	background:{
+		color: #ffedc5;
+	}
+	//js中显示使用display：block，所以此处display属性无效
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	text-align: center;
+	img{
+
+		height: 15rem;
+		margin: 8rem 0;	
+	}
+	margin-top: -2rem;
+	width: 73%;
+	p{
+		color: $blue;
+		font-size: 2rem;
+		margin: 0;	
+	}
+}
+
+#check-btn1 ,#check-btn2{
+	width: 80%;
+	background-color: $orange;
+	font-size: 2.4rem;
+	color: #fff;
+	margin:{
+		top: 6rem;
+		bottom: 3rem;
+	}
+	padding:1rem 0;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+.none{
+	display: none;
+}

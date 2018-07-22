@@ -1,0 +1,92 @@
+@import url(normalize.css);
+@import url(normalize.css);
+html {
+  font-size: 62.5%; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  top: 0; }
+
+.main {
+  position: absolute;
+  width: 100%;
+  overflow: auto; }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+
+body {
+  background: #29bde0; }
+
+.header {
+  background: #29bde0;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  z-index: 2; }
+  .header span {
+    color: #fff;
+    font-size: 1.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem; }
+  .header a {
+    font-size: 0; }
+  .header img {
+    height: 2rem;
+    margin: 0 1rem; }
+
+.main {
+  top: 3.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.number {
+  border: 0.2rem solid #ffedc5;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 3.8rem;
+  height: 3.8rem;
+  margin-top: 5rem;
+  text-align: center;
+  color: #f56b81;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3.8rem;
+  z-index: 1; }
+
+.flop-card {
+  border: 0.2rem solid #fff;
+  background-color: #ffedc5;
+  text-align: center;
+  margin-top: -2rem;
+  width: 73%; }
+  .flop-card img {
+    height: 15rem;
+    margin: 8rem 0; }
+  .flop-card p {
+    color: #29bde0;
+    font-size: 2rem;
+    margin: 0; }
+
+#check-btn1, #check-btn2 {
+  width: 80%;
+  background-color: #fbb435;
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  border: 0;
+  cursor: pointer; }
+
+.none {
+  display: none; }
+
+/*# sourceMappingURL=3checkId.css.map */
