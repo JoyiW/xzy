@@ -15,21 +15,21 @@
 	</div>
 	<!-- main -->
 	<div class="main">
-		<div class="number">1</div>
+		<div class="number" id="topId"></div>
 
 		<div class="flop-card" id="flopCard1">
 			<img src="images/flop1.png" id="flop1">
 		</div>
 		<div class="flop-card" id="flopCard2">
 			<img src="images/flop2.png" id="flop2">
-			<p>杀手</p>
+			<p id="identity"></p>
 		</div>
 
-		<button id="check-btn1" onclick="checkId()">
-			查看1号身份
+		<button id="checkBtn1">
+			查看<span id="getId"></span>号身份
 		</button>
-		<button id="check-btn2" onclick="hideId()">
-			隐藏并传递给2号身份
+		<button id="checkBtn2">
+			隐藏并传递给<span id="passId"></span>号身份
 		</button>
 	</div>
 <script type="text/javascript" src="3checkId.js"></script>
