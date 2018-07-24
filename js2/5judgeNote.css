@@ -42,5 +42,92 @@ body {
 
 .main {
   top: 3.5rem; }
+  .main .date {
+    border: 0.1rem solid #c9c9c9;
+    color: #29bde0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    background: #fff;
+    text-align: center;
+    margin: 1.7rem 1rem 0.7rem 1rem; }
+  .main .process {
+    border: 0.1rem solid #c9c9c9;
+    background: #fff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex; }
+    .main .process .process-left {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column; }
+      .main .process .process-left .line1 {
+        width: 0.3rem;
+        height: 2.3rem;
+        margin-left: 5.5rem;
+        background: #c9c9c9; }
+      .main .process .process-left .img1, .main .process .process-left .img2 {
+        margin-right: 1rem;
+        margin-left: 3.5rem;
+        padding: 0.5rem;
+        border: 0.1rem solid #c9c9c9;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%; }
+        .main .process .process-left .img1 img, .main .process .process-left .img2 img {
+          transform: scale(0.5, 0.5); }
+      .main .process .process-left .img1 img {
+        margin-top: -0.2rem;
+        margin-right: -0.3rem; }
+      .main .process .process-left .img2 img {
+        margin-top: -0.2rem;
+        margin-left: -0.3rem; }
+      .main .process .process-left .line2 {
+        width: 0.3rem;
+        height: 12rem;
+        margin-bottom: 4rem;
+        margin-left: 5.5rem;
+        background: #c9c9c9; }
+    .main .process .process-right {
+      width: 100%;
+      margin-top: 4rem;
+      margin-right: 3rem; }
+      .main .process .process-right .pr {
+        display: flex;
+        margin-left: 1rem;
+        text-decoration: none; }
+        .main .process .process-right .pr .triangle {
+          width: 0;
+          height: 0;
+          margin-top: 1.5rem;
+          border-width: 0.8rem 0.8rem 0.8rem 0;
+          border-style: solid;
+          border-color: transparent #29bde0 transparent transparent; }
+        .main .process .process-right .pr .world {
+          text-align: center;
+          background: #29bde0;
+          font-size: 1.5rem;
+          color: #fff;
+          padding: 1.2rem 0;
+          width: 100%; }
+        .main .process .process-right .pr .kill, .main .process .process-right .pr .last-world, .main .process .process-right .pr .speak {
+          margin-bottom: 2rem; }
+
+.footer {
+  background: #79d4f2;
+  display: flex;
+  justify-content: center;
+  bottom: 0; }
+  .footer button {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    background: #fbb435;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.2rem 0;
+    cursor: pointer;
+    margin: 1.5rem;
+    outline: none; }
 
 /*# sourceMappingURL=5judgeNote.css.map */

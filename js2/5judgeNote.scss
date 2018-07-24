@@ -1,6 +1,39 @@
 @import 'mixin.scss';
 @import 'normalize.css';
 @import 'common.scss';
+@mixin triangle{
+			width: 0;
+			height: 0;
+			margin-top: 1.5rem;			
+			border:{
+				width: 0.8rem 0.8rem 0.8rem 0;
+				style: solid;
+				color: transparent $blue transparent transparent ;	
+			}	
+		}
+@mixin world{
+				text-align: center;
+				background: $blue;
+				font-size: 1.5rem;
+				color: #fff;
+				padding:1.2rem 0;
+				width: 100%;
+				// margin-right: 3rem;
+		}			
+@mixin img{
+	margin: {
+					right: 1rem;
+					left: 3.5rem;
+				}
+				img{
+					transform: scale(.5, .5);
+				}
+				padding:0.5rem;
+				border: 0.1rem solid #c9c9c9;
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+}
 body{
 	background:#f0f0f0;
 }
@@ -25,6 +58,103 @@ body{
 	border-bottom: 0.1rem solid rgba(255,255,255,.3);
 	z-index: 2;
 }
+//main
 .main{
 	top:3.5rem;
+	.date{
+		border: 0.1rem solid #c9c9c9;
+		color: $blue;
+		font:{
+			weight:bold;
+			size: 1.5rem;
+			}
+		padding:1.5rem 0;
+		background: #fff;
+		text-align: center;
+		margin:1.7rem 1rem 0.7rem 1rem;
+	}
+	.process{
+		border: 0.1rem solid #c9c9c9;
+		background: #fff;
+		margin: {
+			right: 1rem;
+			left: 1rem;
+		}
+		display: flex;
+		.process-left{
+			margin-top: 4rem;
+			display: flex;
+			flex-direction: column;
+			.line1{
+				width: 0.3rem;
+				height: 2.3rem;
+				margin: {
+					
+					left: 5.5rem;
+				}
+				background: #c9c9c9;
+			}
+			.img1,.img2{
+				@include img;	
+			}
+			.img1 img{
+				margin-top: -0.2rem;
+				margin-right: -0.3rem;
+			}
+			.img2 img{
+				margin-top:-0.2rem;
+				margin-left: -0.3rem;
+			}
+			.line2{
+				width: 0.3rem;
+				height: 12rem;
+				margin: {
+					bottom: 4rem;
+					left: 5.5rem;
+				}
+				background: #c9c9c9;
+			}
+		}
+		.process-right{
+			width: 100%;
+			margin-top: 4rem;
+			margin-right: 3rem;
+			.pr{
+
+				display: flex;
+				margin-left: 1rem;
+				text-decoration: none;
+				.triangle{
+					@include triangle;
+				}	
+				.world{
+					@include world;
+				}
+				.kill,.last-world,.speak{
+					margin-bottom: 2rem;
+				}
+
+			}
+
+		}
+	}
+}
+// footer
+.footer{
+	background: #79d4f2;
+	display: flex;
+	justify-content: center;
+	button{
+		width: 100%;
+		border: none;
+		border-radius: 0.5rem;
+		background: $orange;
+		color: #fff;
+		font-size: 1.8rem;
+		padding:1.2rem 0;
+		cursor: pointer;
+		margin: 1.5rem;
+		outline: none;
+	}
+	bottom: 0;
 }
