@@ -1,3 +1,4 @@
+
 //获得数据
 var sumState=JSON.parse(sessionStorage.getItem('sumRandom'));
 console.log(sumState); 
@@ -24,8 +25,9 @@ checkBtn1.onclick=function() {
 	checkBtn2.style.display="block";
 	
 	passId.innerHTML=clickNum+1;
-	if (clickNum<=sumState.length) 
-	{
+
+if (clickNum<=sumState.length) {
+	if (clickNum<sumState.length) {
 		if (sumState[clickNum-1].role=='killer') 
 		{
 			identity.innerHTML="杀手";
@@ -33,13 +35,20 @@ checkBtn1.onclick=function() {
 		{
 			identity.innerHTML="平民";
 		}
-	} else if(clickNum=sumState.length){
-			checkBtn2.innerHTML="法官查看";
+	}else{
+		if (sumState[clickNum-1].role=='killer') 
+		{
+			identity.innerHTML="杀手";
+		} else if(sumState[clickNum-1].role=='civilian')
+		{
+			identity.innerHTML="平民";
 		}
+		checkBtn2.innerHTML="法官查看";
+
+	}
+}
 console.log(clickNum);
-	clickNum++;
-
-
+clickNum++;
 }
 checkBtn2.onclick=function () {
 	flopCard1.style.display="block";
@@ -50,8 +59,11 @@ checkBtn2.onclick=function () {
 		topId.innerHTML=clickNum;
 		getId.innerHTML=clickNum;
 		passId.innerHTML=clickNum;
-	} else if (clickNum>sumState.length){
+	} else{
+		flopCard1.style.display="none"; 
+		checkBtn1.style.display="none";
+		topId.style.display="none";
 		window.location.href="4judgeCheck.html";
 	}
-	
+
 }

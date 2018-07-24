@@ -1,0 +1,46 @@
+@import url(normalize.css);
+@import url(normalize.css);
+html {
+  font-size: 62.5%; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  top: 0; }
+
+.main {
+  position: absolute;
+  width: 100%;
+  overflow: auto; }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+
+body {
+  background: #f0f0f0; }
+
+.header {
+  background: #29bde0;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  z-index: 2; }
+  .header span {
+    color: #fff;
+    font-size: 1.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem; }
+  .header a {
+    font-size: 0; }
+  .header img {
+    height: 2rem;
+    margin: 0 1rem; }
+
+.main {
+  top: 3.5rem; }
+
+/*# sourceMappingURL=5judgeNote.css.map */

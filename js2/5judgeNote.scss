@@ -2,5 +2,29 @@
 @import 'normalize.css';
 @import 'common.scss';
 body{
+	background:#f0f0f0;
+}
+// header
+.header{
 	background:$blue;
+	span{
+		color: #fff;
+		font-size:1.7rem;
+		padding:{
+			top:0.7rem;
+			bottom: 0.7rem;
+			}
+		}
+	a{
+		font-size:0;
+	}
+	img{
+		height:2rem;
+		margin: 0 1rem;
+	}
+	border-bottom: 0.1rem solid rgba(255,255,255,.3);
+	z-index: 2;
+}
+.main{
+	top:3.5rem;
 }
