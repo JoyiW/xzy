@@ -9,14 +9,14 @@
 <body>
 	<!-- header -->
 	<div class="header">
-		<a href="3checkId.html"><img src="images/backleft.png"></a>
+		<a href="4judgeCheck.html"><img src="images/backleft.png"></a>
 		<span>法官台本</span>
 		<a href="1index.html"><img src="images/close.png"></a>
 	</div>
 	<!-- main -->
 	<div class="main">
-		<div class="date">
-			第<span>一</span>天
+		<div class="dates">
+			第<span id="day"></span>天
 		</div>
 		<div class="process">
 			<div class="process-left">
@@ -28,11 +28,11 @@
 			<div class="process-right">
 				<a href="#" class="pr">
 					<div class="triangle"></div>
-					<div class="kill world">杀手杀人</div>
+					<div class="kill world" id="killPeople">杀手杀人</div>
 				</a>
 				<a href="#" class="pr">
 					<div class="triangle"></div>
-					<div class="last-world world">亡灵发表遗言</div>
+					<div class="lastworld world">亡灵发表遗言</div>
 				</a>
 				<a href="#" class="pr">
 					<div class="triangle"></div>
@@ -48,8 +48,10 @@
 	<!-- footer -->
 	<div class="footer">
 		<button class="game-over" id="gameOver">结束游戏</button>
-		<button class="judge-check">法官日志</button>
+		<button class="judge-check" id="judgeCheck">法官日志</button>
 	</div>
+ <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="state-machine.js"></script>
 <script type="text/javascript" src="5judgeNote.js"></script>
 </body>
 </html>

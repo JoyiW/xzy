@@ -61,7 +61,7 @@ body{
 //main
 .main{
 	top:3.5rem;
-	.date{
+	.dates{
 		border: 0.1rem solid #c9c9c9;
 		color: $blue;
 		font:{
@@ -130,7 +130,7 @@ body{
 				.world{
 					@include world;
 				}
-				.kill,.last-world,.speak{
+				.kill,.lastworld,.speak{
 					margin-bottom: 2rem;
 				}
 

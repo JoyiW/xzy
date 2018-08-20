@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="6killPeople.css">
+	<title>杀手杀人</title>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<span>杀手杀人</span>
+		<a href="1index.html"><img src="images/close.png"></a>
+	</div>
+	<!-- main -->
+	<div class="main" id="mainBox">
+		<div class="tip">
+			<div class="t1">杀手请睁眼，杀手请选择要杀的对象</div>
+			<div class="triangle"></div>
+			<div class="t2">点击下方玩家头像，对被杀的玩家进行标记</div>
+		</div>
+		<div class="id-box" id="idBox"><!-- container -->
+			<div class="ib"><!-- square -->
+				<div id="identity" class="identity"></div>
+				<div class="id-num">
+					<span id="getId" class="get-id"></span>号
+				</div>
+			</div>
+			<div class="kill-img" id="killImg">
+				<img src="images/kill.png">
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="5judgeNote.html"><button id="sure">确定</button></a>
+	</div>
+ <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script type="text/javascript" src="state-machine.js"></script>
+<script type="text/javascript" src="6killPeople.js"></script>
+</body>
+</html>

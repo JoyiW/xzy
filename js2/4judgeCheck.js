@@ -2,10 +2,10 @@
 var sumState=JSON.parse(sessionStorage.getItem('sumRandom'));
 // console.log(sumState);
 
-var idBox=document.getElementsByClassName('id-box');
-var identity=document.getElementsByClassName('identity');
-var getId=document.getElementsByClassName('get-id');
 var mainBox=document.getElementById('mainBox');
+var idBox=document.getElementsByClassName('id-box');
+var getId=document.getElementsByClassName('get-id');
+var identity=document.getElementsByClassName('identity');
 
 //克隆出空的节点
 for (var i = 1; i < sumState.length; i++) {
@@ -24,5 +24,7 @@ for (i = 0; i < sumState.length; i++) {
 	} else {
 		identity[i].innerHTML="平民";
 	}
-
+	if (sumState[i].state == 'died') {
+        identity[i].style.backgroundColor = 'rgb(131, 176, 154)';
+    }
 }
