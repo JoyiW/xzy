@@ -1,0 +1,45 @@
+.navbar, .col-sm-9, .container-fluid {
+  padding: 0; }
+
+.navbar-brand {
+  font-size: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  width: 100%; }
+
+.navbar-nav {
+  margin-top: 1rem; }
+
+.nav-link {
+  font-size: 0.75rem; }
+
+.rt span {
+  margin: 1rem; }
+
+.dropdown-menu {
+  min-width: 0;
+  border: none; }
+
+.dropdown-item {
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #343a40; }
+
+.ad {
+  border: 1px solid #7a7e88;
+  width: 95%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem; }
+
+.dTitle {
+  border-bottom: 1px solid #7a7e88; }
+
+.dC {
+  margin-top: 1rem; }
+
+.form-group {
+  display: flex;
+  justify-content: space-between; }
+  .form-group input, .form-group select {
+    width: 80%; }

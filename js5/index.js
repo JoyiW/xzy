@@ -62,7 +62,7 @@ function runAjax(type, url, data) {// 带形参的封装的函数
             success: function good(getDate) {
                 console.log(getDate);
                 if (getDate.code === 0) {
-                    window.open('1.html');
+                    window.open('welcome.html');
                 } else {
                     alert("帐号或密码错误，请重新输入");
                 }
@@ -71,7 +71,7 @@ function runAjax(type, url, data) {// 带形参的封装的函数
     }
     
     $(document).ready(function () {
-        $("#btn").click(function () {// 点击事件
+        $("#btn").click(function () {
             var name = document.getElementsByName("name")[0];
             var pwd = document.getElementsByName("pwd")[0];
             var span = document.getElementsByTagName("span");

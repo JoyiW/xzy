@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="articleList.css">
+    <title>Article List</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <nav class="navbar bg-dark navbar-dark text-center d-flex justify-content-center">
+                    <!-- Brand/logo -->
+                    <a class="navbar-brand" href="#">后台管理系统</a>
+                    <!-- Links -->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">信息管理</a>
+                        </li>
+                        <!-- dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Article管理</a>
+                            <div class="dropdown-menu bg-dark">
+                                <a class="dropdown-item" href="#">Article列表</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">人才管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">推荐管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">后台管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">用户管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">内容管理</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-9">
+                <div class="col-sm d-flex justify-content-end rt">
+                    <span>
+                        <a href="#">Admin</a>
+                    </span>
+                    <span>
+                        <a href="#">JY</a>
+                    </span>
+                    <span>
+                        <a href="#">Exit</a>
+                    </span>
+                </div>
+                <div class="col-sm fPart">
+                    <form>
+                        <div class="form-group distribution-time">
+                            <label for="dTime">发布时间</label>
+                            <input type="text" class="form-control" id="dtStart">
+                            <label class="text-center">——</label>
+                            <input type="text" class="form-control" id="dtEnd">
+                        </div>
+                        <div class="form-group">
+                            <label for="types">类型</label>
+                            <select class="form-control" id="types">
+                                <option>全部</option>
+                                <option>Type1</option>
+                                <option>Type2</option>
+                                <option>Type3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">状态</label>
+                            <select class="form-control" id="status">
+                                <option>全部</option>
+                                <option>上线</option>
+                                <option>下线</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-danger">清空</button>
+                        <button type="button" class="btn btn-success">搜索</button>
+                    </form>
+                </div>
+                <div class="col-sm aList">
+                    <div class="aTitle d-flex justify-content-between align-items-center">
+                        Articlel列表
+                        <button type="button" class="btn btn-success">+新增</button>
+                    </div>
+                    
+                    <div class="table-responsive text-center">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>名称</th>
+                                    <th>类型</th>
+                                    <th>发布时间</th>
+                                    <th>修改时间</th>
+                                    <th>发布者</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Name1</td>
+                                    <td>Type1</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>admin</td>
+                                    <td>上线</td>
+                                    <td>
+                                        <a href="#">下线</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Name2</td>
+                                    <td>Type2</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>admin</td>
+                                    <td>上线</td>
+                                    <td>
+                                        <a href="#">下线</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Name3</td>
+                                    <td>Type3</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>2018.01.01 12:00:00</td>
+                                    <td>admin</td>
+                                    <td>上线</td>
+                                    <td>
+                                        <a href="#">下线</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

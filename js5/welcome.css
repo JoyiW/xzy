@@ -1,0 +1,26 @@
+.navbar, .col-sm-9, .container-fluid {
+  padding: 0; }
+
+.navbar-brand {
+  font-size: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  width: 100%; }
+
+.navbar-nav {
+  margin-top: 1rem; }
+
+.nav-link {
+  font-size: 0.75rem; }
+
+.rt span {
+  margin: 1rem; }
+
+.dropdown-menu {
+  min-width: 0;
+  border: none; }
+
+.dropdown-item {
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #343a40; }

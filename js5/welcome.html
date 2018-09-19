@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- angular -->
+  <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+  <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular-route.min.js"></script>
+
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="welcome.css">
+  <title>首页</title>
+</head>
+
+<body ng-app="myApp" class="ng-scope">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <nav class="navbar bg-dark navbar-dark text-center d-flex justify-content-center">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#!/">后台管理系统</a>
+          <!-- Links -->
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">信息管理</a>
+            </li>
+            <!-- dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#!/" id="navbardrop" data-toggle="dropdown">Article管理</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item" href="#!/articleList.html">Article列表</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">人才管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">推荐管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">后台管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">用户管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">内容管理</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-9">
+        <div class="col-sm d-flex justify-content-end rt">
+          <span><a href="#!/">Admin</a></span>
+          <span><a href="#!/">JY</a></span>
+          <span><a href="#!/">Exit</a></span>
+        </div>
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

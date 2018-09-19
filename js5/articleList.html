@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="articleList.css">
+    <title>articleList</title>
+</head>
+<body>
+    <div class="col-sm fPart">
+        <form>
+            <div class="form-group distribution-time">
+                <label for="dTime">发布时间</label>
+                <input type="text" class="form-control" id="dtStart">
+                <label class="text-center">——</label>
+                <input type="text" class="form-control" id="dtEnd">
+            </div>
+            <div class="form-group">
+                <label for="types">类型</label>
+                <select class="form-control" id="types">
+                    <option>全部</option>
+                    <option>Type1</option>
+                    <option>Type2</option>
+                    <option>Type3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="status">状态</label>
+                <select class="form-control" id="status">
+                    <option>全部</option>
+                    <option>上线</option>
+                    <option>下线</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-danger">清空</button>
+            <button type="button" class="btn btn-success">搜索</button>
+        </form>
+    </div>
+    <div class="col-sm aList">
+        <div class="aTitle d-flex justify-content-between align-items-center">
+            Articlel列表
+            <a href="#!/articleDetails.html" class="btn btn-success" role="button">+新增</a>
+        </div>
+        
+        <div class="table-responsive text-center">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>类型</th>
+                        <th>发布时间</th>
+                        <th>修改时间</th>
+                        <th>发布者</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Name1</td>
+                        <td>Type1</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>admin</td>
+                        <td>上线</td>
+                        <td>
+                            <a href="#">下线</a>
+                            <a href="#">编辑</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Name2</td>
+                        <td>Type2</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>admin</td>
+                        <td>上线</td>
+                        <td>
+                            <a href="#">下线</a>
+                            <a href="#">编辑</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Name3</td>
+                        <td>Type3</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>2018.01.01 12:00:00</td>
+                        <td>admin</td>
+                        <td>上线</td>
+                        <td>
+                            <a href="#">下线</a>
+                            <a href="#">编辑</a>
+                            <a href="#">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
