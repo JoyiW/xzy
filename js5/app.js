@@ -11,7 +11,7 @@ angular.module('myApp',['ngRoute'])
 .config(function ($routeProvider) {
     $routeProvider.
     when('/',{    //跳转路径，href里内容
-        templateUrl:'sayhi.html',  //显示内容的id
+        templateUrl:'sayhi.html',  //显示的内容
         controller:'WelcomeController'
     }).
     when('/articleList.html', {
